@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""id="form">
+    <label for="">First Name</label><br>
+    <input type="text" id="fname" placeholder="Enter Your First-Name"><br>
+    <label for="">Second Name</label><br>
+    <input type="text" id="lname" placeholder="Enter Your Last-Name"><br>
+    <label for="">Gender</label><br>
+    <input type="text" id="gender" placeholder="Enter Your Gender"><br>
+    <label for="">Message</label><br>
+    <input type="text" id="message" placeholder="Enter Your Message"><br>
+    <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit",function(eric){
+           let a=document.getElementById("fname").value.trim();
+           let b=document.getElementById("lname").value.trim();
+           let c=document.getElementById("gender").value.trim();
+           let d=document.getElementById("message").value.trim();
+           if(a === "" || b === "" || c === "" || d === ""){
+            alert("please Fill all field");
+            eric.preventDefault();
+           }
+        });
+    </script>
+</body>
+</html>
